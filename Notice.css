@@ -1,0 +1,203 @@
+﻿    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Sans-Serif;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #body {
+        width: 100%;
+        padding: 5px 50px;
+    }
+
+    #body .status {
+        width: 100%;
+        padding: 5px 5px;
+        background: #ccc;
+        position: relative;
+        font-size: 15px;
+    }
+
+    #body .status.top {
+        padding-bottom: 0;
+    }
+
+    #body .status.bottom {
+        padding-top: 2px;
+    }
+
+    #body .status i {
+        width: 22px;
+    }
+
+    #body .status .info {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 15px;
+    }
+
+    #body .status .lbl {
+        font-family: HP Simplified;
+    }
+
+    #content {
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+        margin: 5px auto 30px;
+        padding: 4px 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, .3);
+    }
+
+    .intro {
+        position: relative;
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 15px;
+        background-color: #eee;
+        border: 1px dashed #555;
+        border-radius: 4px;
+    }
+
+    .intro ul {
+        margin: 10px 0 10px 15px;
+    }
+
+    .intro ul li {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .gvContainer {
+        overflow: auto;
+        height: 500px;
+    }
+
+    .gv {
+        border-color: #ccc;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gv .gvheader {
+        min-width: 150px;
+        background-color: #4caf50;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 15px 10px;
+        position: sticky;
+        top: -1px;
+    }
+
+    .gv .gvitem {
+        max-width: 200px;
+        font-size: 16px;
+        padding: 8px 10px;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    .gv .gvaction {
+        min-width: 230px;
+        background-color: #eee;
+        padding: 8px 10px;
+    }
+
+    .gv .error {
+        padding: 8px 10px;
+        background-color: #FF9999;
+    }
+
+    .gv .gvTextbox {
+        width: 100%;
+        padding: 8px 15px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        outline: 0;
+        font-size: 16px;
+        font-family: HP Simplified;
+    }
+
+    .gv .gvTextbox:focus {
+        border: 2px solid #1A73E8;
+    }
+
+    .gv .gvbtn {
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+
+    .gv .gvbtn i {
+        margin-right: 4px;
+    }
+
+    .gv .gvbtn .delete {
+        color: #FF4444;
+    }
+
+    .gv .gvbtn:hover {
+        text-decoration: underline;
+        background-color: #ddd;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    /*-------------Mobile-------------*/
+
+    @media (max-width: 600px) {
+        .intro {
+            width: 100%;
+            margin: 0 auto 10px;
+            padding: 10px 15px 0;
+        }
+        .intro ul {
+            margin: 0 0 0 15px;
+        }
+        .intro ul li {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+        }
+        .gvContainer {
+            width: 100%;
+            max-height: 300px;
+            margin: 0 auto;
+        }
+        .gv .gvheader {
+            min-width: 100px;
+            padding: 8px 5px;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+        .gv .gvitem {
+            max-width: 200px;
+            padding: 5px 8px;
+            font-size: 14px;
+        }
+        .gv .gvaction {
+            min-width: 210px;
+        }
+        .gv .gvTextbox {
+            min-width: 120px;
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+        .gv .gvbtn {
+            padding: 4px 8px;
+        }
+    }

@@ -1,0 +1,239 @@
+﻿./*.ghost-round {
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.65);
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-family: roboto;
+  font-weight: 3;
+  line-height: 2.5em;
+  margin-top: auto;
+  margin-bottom: 25px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+.ghost-round:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.input-line {
+  background: none;
+  margin-bottom: 10px;
+  line-height: 2.4em;
+  color: #fff;
+  font-family: roboto;
+  font-weight: 300;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  font-size: 19px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.full-width {
+}
+
+
+
+.content {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  z-index: 5;
+    width: 340px;
+}
+
+.welcome {
+  font-weight: 200;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+  letter-spacing: 0.05rem;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50px;
+}
+*/
+.window {
+  z-index: 100;
+  color: #fff;
+  font-family: roboto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 444px;
+  width: 360px;
+  background: #fff;
+  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') no-repeat left top;
+    top: 116px;
+    left: 0px;
+    padding-right:200px;
+}
+
+.gvContainer {
+    overflow: auto;
+    min-height: 300px;
+    max-height: 400px;
+    user-select: text;
+    width: 1394px;
+    padding-right:200px;
+    
+}  
+.gv {
+    border-color: #ccc;
+    text-align: center;
+} 
+
+.gv .gvheader {
+    min-width: 150px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    position: sticky;
+    top: -1px;
+}
+
+.gv .gvitem {
+    max-width: 200px;
+    font-size: 14px;
+    padding: 8px 10px;
+    overflow: hidden;
+    cursor: default;
+}
+
+.gv .gvaction {
+    min-width: 230px;
+    background-color: #eee;
+    padding: 8px 10px;
+}
+
+.gv .error {
+    padding: 8px 10px;
+    background-color: #FF9999;
+}
+
+.gv .gvTextbox {
+    width: 100%;
+    padding: 8px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 16px;
+    font-family: HP Simplified;
+}
+
+.gv .gvTextbox:focus {
+    border: 2px solid #1A73E8;
+}
+
+.gv .gvbtn {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.gv .gvbtn i {
+    margin-right: 4px;
+}
+
+.gv .gvbtn .delete {
+    color: #FF4444;
+}
+
+.gv .gvbtn:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+/*-------------Mobile-------------*/
+
+@media (max-width: 600px) {
+    .intro {
+        width: 100%;
+        margin: 0 auto 10px;
+        padding: 10px 15px 0;
+    }
+    .intro ul {
+        margin: 0 0 0 15px;
+    }
+    .intro ul li {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .gvContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .gv .gvheader {
+        min-width: 100px;
+        padding: 8px 5px;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .gv .gvitem {
+        max-width: 200px;
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    .gv .gvaction {
+        min-width: 230px;
+    }
+    .gv .gvTextbox {
+        min-width: 120px;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    .btnContainer {
+        margin: 30px auto 15px;
+    }
+    .btnContainer .btn {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+}
+#btnSend:hover
+{
+    font-size:20px;
+}
